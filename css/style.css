@@ -37,7 +37,8 @@ img{
 }
 
 .introduction, .red, .blue, .yellow, .green {
-	height:126px;
+    height:auto;
+    min-height:125px;
 	padding-left:20px;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -57,16 +58,16 @@ img{
 	background-color: #ff0000;
 	text-align: right;
 	margin-left: 50px;
-	border-bottom: 2px;
-	border-left: 5px;
+    border-style: none none solid solid; 
+    border-width: initial initial 2px 5px;
 }
 
 .blue{
 	background-color:#0000ff;
 	text-align:left;
 	margin-right:50px;
-	border-right: 5px;
-	border-top:2px;
+    border-style: solid solid none none; 
+    border-width: 2px 5px solid solid;
 	color: #C4C4C4;
 }
 
@@ -78,8 +79,8 @@ img{
 	background-color: #ffff00;
 	text-align: right;
 	margin-left: 50px;
-	border-bottom:2px;
-	border-left:5px;
+    border-style: none solid solid none;
+    border-width: initial 5px 2px initial;
 	color: #707070;
 }
 
@@ -87,8 +88,8 @@ img{
 	background-color:#008500;
 	text-align:left;
 	margin-right:50px;
-	border-right:5px;
-	border-top:2px;
+    border-style: solid solid none none;
+    border-width: 2px 5px initial initial;
 }
 
 footer{
@@ -97,14 +98,13 @@ footer{
 	border-style:solid;
 	border-color:white;
 	border-width: 5px;
+    padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
 }
 
 footer p{
 	font-size: 20px;
 	text-align:right;
     padding:15px;
-	padding-top: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-
 }
